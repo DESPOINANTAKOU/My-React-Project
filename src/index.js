@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from "react-router-dom";
 import LoginForm from './components/LoginForm';
 import { Routes, Route, Link} from "react-router-dom";
+import Signup from './components/Signup';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -14,9 +15,10 @@ root.render(
     <Routes>
       <Route path="/" element={<App />} />
       <Route path="loginform" element={<LoginForm />} />
+      <Route path="signup" element={<Signup />} />
       <Route path="*" element={<>
       <p>Wrong URL please return to the Home Page!</p>
-      </>} />
+      </>} /> 
     </Routes>
   </BrowserRouter>
   </React.StrictMode>
